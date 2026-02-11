@@ -1,81 +1,124 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: lightgray;
-    padding: 20px;
-    font-family: Arial;
-}
-
-.container {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    gap: 20px;
-}
-
-.eventForm {
-    background-color: white;
-    padding: 15px;
-    width: 50%;
-    border: 1px solid #ccc;
-}
-
-.form label {
-    display: block;
-    margin-top: 10px;
-}
-
-.form input,
-.form select,
-.form textarea {
-    width: 100%;
-    padding: 5px;
-    margin-top: 5px;
-}
-
-.form input[type="submit"] {
-    margin-top: 10px;
-    padding: 8px;
-    background-color: blue;
-    color: white;
-    border: none;
-}
-
-.events {
-    background-color: white;
-    padding: 15px;
-    width: 50%;
-    border: 1px solid #ccc;
-}
-
-.events button {
-    padding: 6px;
-    margin-right: 5px;
-}
-
-
-.card{
-    background-color: antiquewhite;
-    width: 150px;
-    position: relative
-
-}
-
 .dlt{
-    position: absolute;
-    top: 5px;
-    right:5px;
     background-color: red;
     color: white;
-    width:15px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 15px;
     height: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    font-size: 12px
+    font-size: 12px;
+    cursor: pointer;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+.heading{
+    text-align:center;
+    color: white;
+    margin-bottom:30px;
+}
+body{
+    background: linear-gradient(120deg,#69b5e4,#392ed4);
+    padding:30px;
+}
+
+.container{
+    display:flex;
+    gap:25px;
+}
+
+.eventForm{
+    display: flex;
+    flex-direction: column;
+    width:320px;
+    background:white;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
+}
+
+h2{
+    color: #696be4;
+}
+
+.form label{
+    font-weight:600;
+    display:block;
+    margin-top:15px;
+}
+
+.form input, .form select, .form textarea{
+    width:100%;
+    margin-top:6px;
+    padding:10px;
+    border-radius:10px;
+    border:1px solid #ccc;
+}
+
+.form textarea{
+    height:90px;
+    resize:none;
+}
+
+.form input[type="submit"]{
+    margin-top:20px;
+    background:linear-gradient(90deg,#5c6edb,#8a4cc7);
+    color:white;
+    font-weight:bold;
+    border:none;
+    cursor:pointer;
+}
+
+.events{
+    flex:1;
+    background:white;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
+}
+
+.events button{
+    padding:10px 18px;
+    margin-right:10px;
+    border:none;
+    border-radius:10px;
+    color:white;
+    cursor:pointer;
+    background:linear-gradient(90deg,#5c6edb,#8a4cc7);
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    
+}
+.button button{
+    width: 100% ;
+}
+
+.cards{
+    margin-top:25px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.card{
+    width:260px;
+    padding:18px;
+    border-radius:16px;
+    background:linear-gradient(135deg,#e8eef5,#cfd8e6);
+    box-shadow:0 4px 10px rgba(0,0,0,0.12);
+    position:relative;
+}
+
+.domContainer{
+    margin-top:30px;
 }

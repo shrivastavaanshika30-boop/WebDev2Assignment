@@ -5,43 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
-    <div class="constainer">
-        <div class="eventForm">
-            <form class="form">
-                <label for="eventTitle">Event Title: </label>
-                <input type="text" id="eventTitle">
-                <br>
-                <label for="eventDate">Event Date: </label>
-                <input type="date" id="eventDate">
-                <br>
-                <label for="category">Category: </label>
-                <select id="category">
-                    <option value="Conference">Conference</option>
-                    <option value="Workshop">Workshop</option>
-                    <option value="Meetup">Meetup</option>
-                    <option value="Webinar">Webinar</option>
-                    <option value="Social">Social</option>
+    <h1 class="heading">🎯 Smart Events Manager</h1>
+<div class="container">
+    <div class="eventForm">
+        <h2>Add New Event</h2>
+        <form class="form">
+            <label for="eventTitle">Event Title</label>
+            <input type="text" id="eventTitle" >
+            <br>
+            <label for="eventDate">Event Date</label>
+            <input type="date" id="eventDate">  
+            <br>
+            <label for="category">Category</label>
+            <select id="category">
+                <option value="conference">Conference</option>
+                <option value="workshop">Workshop</option>
+                <option value="meetup">Meetup</option>
+                <option value="webinar">Webinar</option>
+                <option value="social">Social</option>
                 </select>
                 <br>
                 <label for="description">Description</label>
                 <textarea id="description"></textarea>
                 <br>
                 <input type="submit" value="Add Event">
-                
-            </form>
+             </form>
+    </div>
+    <div class="events">
+        <h2>My Events</h2>
+        <div class="button">
+
+            <button class="clearAll">Clear All Events</button>
+            <button class="addSample">Add Sample Events</button>
         </div>
-        <div class="events">
-            <button>Clear All Events</button>
-            <button>Add sample Events</button>
-            <div class="cards">
-                
-            </div>
-        </div>
-        <div class="domContainer"></div>
+            <div class="cards"></div>
+    </div>
+    </div>
+    <div class="domContainer"></div>
     </div>
     <script src="script.js"></script>
+
 </body>
 </html>
